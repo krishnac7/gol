@@ -12,10 +12,11 @@ let rows;
 let resolution = 10;
 
 function setup() {
-  createCanvas(
+  var canv = createCanvas(
     windowWidth - (windowWidth % 100),
     windowHeight - (windowHeight % 200)
   );
+  canv.parent("container");
   cols = width / resolution;
   rows = height / resolution;
 
